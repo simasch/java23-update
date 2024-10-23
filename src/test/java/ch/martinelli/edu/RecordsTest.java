@@ -38,4 +38,11 @@ class RecordsTest {
         assertEquals("PETER", record.firstName());
         assertEquals("MUSTER", record.lastName());
     }
+
+    /**
+     * Exercise 3: Use record pattern matching in an instanceof
+     */
+    @Test
+    void recordPatterns() {
+    }
 }

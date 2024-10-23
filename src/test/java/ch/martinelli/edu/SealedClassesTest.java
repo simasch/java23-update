@@ -29,4 +29,12 @@ public class SealedClassesTest {
     void unknownAnimal() {
 
     }
+
+    /**
+     * Exercise: Use a switch expression and test exhaustiveness
+     */
+    @Test
+    void switchExhaustiveness() {
+    }
+
 }
