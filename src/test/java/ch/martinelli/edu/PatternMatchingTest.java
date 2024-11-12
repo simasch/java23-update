@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PatternMatchingTest {
 
     /**
-     * Exercise 1: Remove unnecessary cast
+     * Exercise 1: Remove unnecessary casts
      */
     @Test
     public void instanceOf() {
