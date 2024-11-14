@@ -18,21 +18,12 @@ public class SwitchExpressionsTest {
     }
 
     private int getNumberOfLetters(Day day) {
-        switch (day) {
-            case MONDAY:
-            case FRIDAY:
-            case SUNDAY:
-                return 6;
-            case TUESDAY:
-                return 7;
-            case THURSDAY:
-            case SATURDAY:
-                return 8;
-            case WEDNESDAY:
-                return 9;
-            default:
-                throw new IllegalStateException("Invalid day: " + day);
-        }
+        return switch (day) {
+            case MONDAY, FRIDAY, SUNDAY -> 6;
+            case TUESDAY -> 7;
+            case THURSDAY, SATURDAY -> 8;
+            case WEDNESDAY -> 9;
+        };
     }
 
     /**

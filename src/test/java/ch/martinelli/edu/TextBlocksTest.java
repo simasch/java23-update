@@ -88,11 +88,11 @@ public class TextBlocksTest {
      */
     @Test
     void escaping() {
-//        String escape = """
-//                """
-//                """;
-//
-//        assertEquals("\"\"\"", escape);
+        String escape = """
+                \"""\
+                """;
+
+        assertEquals("\"\"\"", escape);
     }
 
 }

@@ -1,4 +1,4 @@
 package ch.martinelli.edu.animal;
 
-public class Capricorn extends Pet {
+public final class Capricorn extends WildAnimal {
 }

@@ -15,14 +15,10 @@ public class PatternMatchingTest {
     public void instanceOf() {
         Object obj = new Dog();
 
-        if (obj instanceof Dog) {
-            Dog dog = (Dog) obj;
-
+        if (obj instanceof Dog dog) {
             assertEquals("Wuff", dog.bark());
             System.out.println(dog.bark());
-        } else if (obj instanceof Cat) {
-            Cat cat = (Cat) obj;
-
+        } else if (obj instanceof Cat cat) {
             assertEquals("Miau", cat.meow());
         }
     }
@@ -40,8 +36,7 @@ public class PatternMatchingTest {
     private String getType(Object object) {
         if (object == null) {
             return "null";
-        } else if (object instanceof String) {
-            String value = (String) object;
+        } else if (object instanceof String value) {
             return "String is " + value;
         } else {
             return "else";

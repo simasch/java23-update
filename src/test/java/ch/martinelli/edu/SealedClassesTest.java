@@ -2,6 +2,7 @@ package ch.martinelli.edu;
 
 import ch.martinelli.edu.animal.Capricorn;
 import ch.martinelli.edu.animal.Pet;
+import ch.martinelli.edu.animal.WildAnimal;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -17,7 +18,8 @@ public class SealedClassesTest {
     void noPet() {
         Capricorn capricorn = new Capricorn();
 
-        assertTrue(capricorn instanceof Pet);
+        //assertTrue(capricorn instanceof Pet);
+        assertTrue(capricorn instanceof WildAnimal);
     }
 
     /**
