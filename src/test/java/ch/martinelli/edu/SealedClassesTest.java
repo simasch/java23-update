@@ -1,8 +1,6 @@
 package ch.martinelli.edu;
 
-import ch.martinelli.edu.animal.Capricorn;
-import ch.martinelli.edu.animal.Pet;
-import ch.martinelli.edu.animal.WildAnimal;
+import ch.martinelli.edu.animal.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -29,7 +27,9 @@ public class SealedClassesTest {
      */
     @Test
     void unknownAnimal() {
+        Animal unknownAnimal = new UnknownAnimal();
 
+        assertTrue(unknownAnimal instanceof WildAnimal);
     }
 
     /**
